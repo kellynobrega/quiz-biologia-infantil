@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Biologia Infantil</title>
+  <meta charset="UTF-8">
+  <title>Quiz Biologia Infantil</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Comic Sans MS;
+      background:#87CEFA;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      flex-direction:column;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    .btn{
+      padding:20px 40px;
+      font-size:24px;
+      border:none;
+      border-radius:30px;
+      background:#FFD700;
+      cursor:pointer;
+      margin:10px;
+    }
+
+    .btn:hover{
+      transform:scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
-    <!-- TELA INICIO -->
-    <section id="telaInicio" class="ativa-flex">
-        <button onclick="irPara('telaAvatar')">Start Game</button>
-    </section>
+  <h1>🎮 Quiz Biologia Infantil</h1>
 
-    <!-- AVATAR -->
-    <section id="telaAvatar">
-        <h2>Escolha seu avatar</h2>
-        <button onclick="irPara('telaOpcoes')">Confirmar</button>
-    </section>
-
-    <!-- MENU -->
-    <section id="telaOpcoes">
-        <button onclick="irPara('telaTemas')">Jogar</button>
-    </section>
-
-    <!-- TEMAS -->
-    <section id="telaTemas">
-        <button onclick="iniciarJogo('ecologia')">Ecologia</button>
-    </section>
-
-    <!-- JOGO -->
-    <section id="telaJogo">
-        <h2 id="textoPergunta"></h2>
-        <div id="containerOpcoes"></div>
-    </section>
-
-    <script src="data/perguntas.js"></script>
-    <script src="script.js"></script>
+  <!-- abre o quiz separado -->
+  <button class="btn" onclick="location.href='quiz.html'">
+    ▶ Jogar Quiz
+  </button>
 
 </body>
 </html>
